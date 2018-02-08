@@ -87,24 +87,21 @@ div p.currentName{
     right: -117px;
     bottom: -50px;
     z-index: 2;
-    font: bold;
     font-size: 1em;
 }
 
 div.highlow p{
     position: absolute;
-    bottom: 175px;
+    bottom: 135px;
     right: -30px;
-    font: bold;
     font-size: .75em;
     z-index: 1;
 }
 
 div.conditions p{
     position: absolute;
-    bottom: 130px;
+    bottom: 90px;
     right: -30px;
-    font: bold;
     font-size: .75em;
     z-index: 1;
 }
