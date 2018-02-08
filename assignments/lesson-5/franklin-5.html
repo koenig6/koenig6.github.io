@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>City of Franklin | Weather 365</title>
+        <meta name="author" content="Jody Koenig">
+        <meta name="description" content="Franklin City current, ten-day and news weather page">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="/GitHub/koenig6.github.io/css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header>
+            <img src="images/sunCloud.png"  width="100" height="78" alt="The site logo of sun behind rainy cloud">
+            <h1>&#9728; Weather 365&#9730;</h1>
+            <div class="subheading">Weather forecasting that is always there for you!</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The City of Franklin</h2>
+            <figure>
+                <img src="images/small-town.jpg" width="200" height="273" alt="Picture of Franklin">
+            </figure>
+            <figure class="large">
+                <img src="images/townByLake.jpeg" width="200" height="273" alt="Picture of Franklin">
+            </figure>
+            <section class="top">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p>High: 90%</p>
+                    <p>Low: 66%</p>
+                </div>
+                <div class="current">
+                    <p class="currentName">Sunny</p>
+                    <picture>
+                        <img src="images/sunnySky.jpg" width="200" height="273"  alt="Blue sunny sky with few clouds">
+                    </picture>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 0%</p>
+                    <p>Wind Speed: 5 mpg SW</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>&acd;10 Day Forecast&acd;</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <p class="town-article">
+                    <img src="images/thermometer.jpg"  width="200" height="273" alt="Hot and cold thermometer">
+                    And it came to pass in the thirty and fourth year, in the first month, on the fourth day of the month, there arose a great storm, such an one as never had been known in all the land.  And there was also a great and terrible tempest; and there was terrible thunder, insomuch that it did shake the whole earth as if it was about to divide asunder.  And there were exceedingly sharp lightnings, such as never had been known in all the land. (3 Nephi 8:5–7)
+                </p>
+            </article>
+
+            <article class="two">
+                <h3>Great Time to Hit the Trails!</h3>
+                <p class="town-article">
+                    <img src="images/trails.jpeg" width="200" height="273" alt="trail in forest " >
+                    And it came to pass that they journeyed many days in the wilderness, and they fasted much, and prayed much, that the Lord would grant unto them a portion of his Spirit to go with them, and abide with them. ALMA 12:14 [17:9]: And it came to pass when they had arrived in the borders of the land of the Lamanites, that they separated themselves, and departed one from another, trusting in the Lord, that they should meet again at the close of their harvest: for they supposed that great was the work which they had undertaken.  ALMA 12:21 [17:13]
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <aside>
+                123 Main St. Franklin, MU 83454
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | Weather 365 | <span id="currentdate">Current Date Placeholder</span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+</html>

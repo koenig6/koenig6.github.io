@@ -1,0 +1,166 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    //medium+ screen sizes
+    @media (min-width:992px) {
+        .desktop-only {
+            display:block !important;
+        }
+    }
+
+    //small screen sizes
+    @media (max-width: 991px) {
+        .mobile-only {
+            display:block !important;
+        }
+
+        .desktop-only {
+            display:none !important;
+        }
+    }
+
+    nav button {
+        display:none;
+    }  /* hamburger button does not need to be shown */
+
+    nav ul {
+        list-style-type: none;
+        margin: 0; /*removed bullets*/
+        padding: 0;
+        width: 100%
+    }
+
+    nav ul li {
+        text-align: center;
+        float: left;
+        background-color: #8596FE;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; /*removes line under link*/
+    }
+
+    nav ul li.active a {
+        background-color: black;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: thistle;
+    }
+
+    div.current{
+        margin: 5;
+        padding: 0;
+        border: 0;
+    }
+
+    div p.currentName{
+        position: relative;
+        right: 147px;
+        bottom: 0px;
+        z-index: 2;
+        font: bold;
+        font-size: 1.5em
+    }
+
+     div.highlow p{
+        position: relative;
+        top: 65px;
+        bottom: 0;
+        right: 30px;
+        font: bold;
+        font-size: 1.5em;
+        z-index: 1;
+    }
+
+    div.conditions p{
+        position: relative;
+        bottom: 300px;
+        right: 30px;
+        font: bold;
+        font-size: 1.5em;
+        z-index: 1;
+    }
+
+    section img{
+        position: relative;
+        top: -100px;
+        padding: 12px
+    }
+
+    section p {
+        float: right;
+    }
+
+    section p:nth-of-type(1) {
+        margin-left: 5%;
+        width: 30%;
+        float: right;
+
+    }
+
+    section p:nth-of-type(2) {
+        margin-right: 5%;
+        width: 40%;
+        float: right;
+    }
+
+    section.forecast{  /* show the 10-day forecast with the medium view and up */
+        display: block;
+        display: 1px solid black ;
+        width: 100%;
+        height: 0px;
+        margin: 0px auto;
+        position: relative;
+        bottom: 200px
+    }
+
+    main h2{
+        margin-bottom: 0;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+    }
+
+    td,th{
+        width: 100px;
+    }
+
+    article{
+        height: 0px;
+    }
+
+    article p.town-article img { /* responsive images */
+        width: 62.666%;
+        float:right;
+        position: inherit;
+        bottom: 0;
+
+    }
+
+    footer {
+        font-size: inherit;
+        text-align: center;
+        clear:both;
+        background-color: #E6E9FF
+    }
+
+    footer aside {
+    }
+
+    footer>p {/* This structure refers to p elements that are direct children of the footer element */
+
+        width: 100%;
+        margin: auto;
+    }
+
+}
