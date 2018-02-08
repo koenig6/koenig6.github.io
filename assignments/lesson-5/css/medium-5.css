@@ -116,7 +116,7 @@
         height: 0px;
         margin: 0px auto;
         position: relative;
-        bottom: 200px
+        bottom: 250px
     }
 
     main h2{
@@ -137,6 +137,8 @@
 
     article{
         height: 0px;
+        position: relative;
+        bottom: 110px;
     }
 
     article p.town-article img { /* responsive images */
