@@ -4,7 +4,6 @@
     nav button { /* hamburger button does not need to be shown */
         display:none;
     }
-
     nav{
         margin: 0 auto;
         width: 750px;

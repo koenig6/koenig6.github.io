@@ -7,13 +7,11 @@ body {/* Declare the base font-family - from google font api or other */
     font-family: sans-serif;
     margin: auto; /*centers the body element*/
 }
-
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     max-width: 1400px;
     margin: auto; /*centers the header, nav, main, and footer element*/
 }
-
 header {
     text-align: center;
     font-size: 1em;
@@ -21,13 +19,9 @@ header {
 header h1 {
     margin: 10px;
 }
-header img {}
 header .subheading {
     font-size: 90%;
 }
-
-nav {}
-nav button {}
 nav ul {
     list-style-type: none; /*removes bullets*/
     background-color: #8596FE;
@@ -36,7 +30,6 @@ nav ul {
 }
 nav ul li {
     text-align: center; /*centers text to middle of li element*/
-
 }
 nav ul li a {
     text-decoration: none; /*removes line under link*/
@@ -48,7 +41,6 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: thistle; /*when mouse is on nav link it will be this color*/
 }
-
 main {
     margin: 2px;
 }
@@ -70,14 +62,12 @@ section {
     margin: 2%;
 }
 section.top{
-    background-image: url("/GitHub/koenig6.github.io/assignments/lesson-5/images/sunnySky.jpg");
+    background-image: url("/assignments/lesson-5/images/sunnySky.jpg");
     display: flex; /*makes words in a column*/
 }
-
 section.forecast{
     display: none; /*hides forecast*/
 }
-
 article p.town-article-one img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%; /* fill the page in the small/phone view */
     height: auto;
@@ -85,7 +75,6 @@ article p.town-article-one img {  /* This structure refers to img elements that 
 article.two{
     display: none; /*hides 2nd article and photo*/
 }
-
 footer {
     margin: 2%;
     font-size: 61%; /*percent keeps the words on one line & will get larger as screen increases*/
@@ -94,7 +83,3 @@ footer {
     padding: 2px;
 }
 
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */

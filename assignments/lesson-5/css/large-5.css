@@ -12,8 +12,6 @@
         width: 24%;
         margin-left: 30px;
     }
-    main figure{
-    }
     main figure.first-photo{/*shows 2nd photo*/
         width: 25%;
         height: auto;
