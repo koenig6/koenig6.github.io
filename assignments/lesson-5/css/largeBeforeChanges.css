@@ -2,17 +2,14 @@
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
     nav{
-        width: 100%;
+        width: 1440px;
     }
     nav ul li a {
         padding: 10px 10px;
         width: 225px; /*makes link boxes larger so that they are centered*/
     }
-    main{
-        margin: 0 auto;
-    }
     main h2 {
-        width: 25%;
+        width: 24%;
         margin-left: 30px;
     }
     main figure.first-photo{/*shows 2nd photo*/
@@ -28,7 +25,7 @@
         clear: left; /*so it will stay below first photo*/
     }
     section.top{
-        width: 70%;
+        width: 990px;
         height: 470px; /*makes picture bigger height wise, auto was too small*/
         font-size: 2em;/*makes print larger*/
     }

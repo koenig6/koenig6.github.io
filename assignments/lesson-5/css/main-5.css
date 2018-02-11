@@ -76,7 +76,8 @@ article.two{
     display: none; /*hides 2nd article and photo*/
 }
 footer {
-    margin: 2%;
+    margin: 2% auto;
+    height: 5%;
     font-size: 61%; /*percent keeps the words on one line & will get larger as screen increases*/
     text-align: center;
     background-color: #E6E9FF; /*purple background*/
