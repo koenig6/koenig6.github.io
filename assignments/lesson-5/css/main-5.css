@@ -4,7 +4,7 @@
 
 body {/* Declare the base font-family - from google font api or other */
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: sans-serif, 'Oswald', 'Slabo 27px', sans-serif;
     margin: auto; /*centers the body element*/
 }
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
