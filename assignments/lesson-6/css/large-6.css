@@ -1,0 +1,56 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    nav{
+        width: 100%;
+    }
+    nav ul li a {
+        padding: 10px 10px;
+        width: 225px; /*makes link boxes larger so that they are centered*/
+    }
+    main{
+        margin: 0 auto;
+    }
+    main h2 {
+        width: 25%;
+        margin-left: 30px;
+    }
+    main figure.first-photo{/*shows 2nd photo*/
+        width: 25%;
+        height: auto;
+        float: left;
+    }
+    main figure.second-photo{/*shows 2nd photo*/
+        display: block;
+        width: 25%;
+        height: auto;
+        float: left; /* so larger img can go to the right*/
+        clear: left; /*so it will stay below first photo*/
+    }
+    section.top{
+        width: 70%;
+        height: 470px; /*makes picture bigger height wise, auto was too small*/
+        font-size: 2em;/*makes print larger*/
+    }
+    td,th{
+        width: 100px;/*makes my forecast table wider*/
+        height: 40px;
+    }
+    section.articles{
+        display: flex;
+    }
+    article.two{
+        display: block; /*shows 2nd article and photo*/
+    }
+    article p.town-article-one img {
+        width: 25%;
+        height: auto;
+        padding: 5px;
+    }
+    article p.town-article-two img {
+        width: 25%;
+        height: auto;
+        float: right;
+        padding: 5px;
+    }
+}

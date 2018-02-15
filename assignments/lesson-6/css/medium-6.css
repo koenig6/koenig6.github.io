@@ -1,0 +1,56 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { /* hamburger button does not need to be shown */
+        display:none;
+    }
+    nav{
+        margin: 0 auto;
+        width: 750px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav li{
+        display: inline; /*makes words horizontal since default is verticle*/
+        float: left; /*gets the blocks to float next to each other*/
+    }
+    nav ul li a {
+        display: block;/*makes whole link a box to click not just the word*/
+        text-align: center;
+        padding: 10px 10px;
+        width: 125px; /*makes link boxes larger to that they are centered*/
+    }
+    section.top{
+        background-repeat: no-repeat;
+        background-size: cover; /*stretches picture across screen*/
+        height: 200px; /*makes picture bigger height wise, auto was too small*/
+        font-size: 1.5em;/*makes print larger*/
+        justify-content: center; /*ceters content in flex box left to right*/
+        align-items: center; /*centers content top to bottom*/
+    }
+    section.forecast { /* show the 10-day forecast with the medium view and up */
+        display: block;
+        width: 96%; /*streches forecast across screen*/
+        text-align: center; /*ceters forecast*/
+        margin: auto;
+    }
+    table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, td, th {
+        border: 1px solid black;
+    }
+    article p.town-article-one img { /* responsive images */
+        width: 50%;
+        float:right; /*makes img right of article*/
+    }
+    footer{
+        clear: both;/* makes footer completely under img and article*/
+    }
+
+}
