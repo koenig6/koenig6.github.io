@@ -1,14 +1,26 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
-
-@media only screen and (max-width: 37.5em) {
-    .navigation.responsive { position: relative; }
-    .navigation.responsive li { background-color: #eee;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
-    .navigation.responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; }
-    .navigation.responsive li a:hover { background-color: #ddd; }
-}
-
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
-
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        background-color: #8596FE;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration:none;
+    }
+    .navigation.responsive li a:hover {
+        background-color: thistle;
+    }
+}
 body {/* Declare the base font-family - from google font api or other */
     font-size: 16px;
     font-family:'Oswald', 'Slabo 27px', sans-serif;
@@ -31,16 +43,16 @@ header .subheading {
 }
 nav button {
     display: block;
-
 }
 nav ul {
-    display: none;
+    display: block;
     list-style-type: none; /*removes bullets*/
-    background-color: #8596FE;
+    background-color: clear;
     padding: 2px;
     margin: 2px;
 }
 nav ul li {
+    display: none;
     text-align: center; /*centers text to middle of li element*/
 }
 nav ul li a {

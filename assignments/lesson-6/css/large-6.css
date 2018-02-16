@@ -1,6 +1,9 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
+    header{
+        float: none;
+    }
     nav{
         width: 100%;
     }
@@ -16,21 +19,24 @@
         margin-left: 30px;
     }
     main figure.first-photo{/*shows 2nd photo*/
-        width: 25%;
+        width: 45%;
         height: auto;
         float: left;
     }
     main figure.second-photo{/*shows 2nd photo*/
         display: block;
-        width: 25%;
+        width: 45%;
         height: auto;
         float: left; /* so larger img can go to the right*/
         clear: left; /*so it will stay below first photo*/
     }
     section.top{
-        width: 70%;
+        width: 50%;
         height: 470px; /*makes picture bigger height wise, auto was too small*/
         font-size: 2em;/*makes print larger*/
+    }
+    section.forecast {
+        float: left; /* moved this below photos*/
     }
     td,th{
         width: 100px;/*makes my forecast table wider*/
@@ -38,6 +44,7 @@
     }
     section.articles{
         display: flex;
+        clear: both;/*moved articles below forecast*/
     }
     article.two{
         display: block; /*shows 2nd article and photo*/

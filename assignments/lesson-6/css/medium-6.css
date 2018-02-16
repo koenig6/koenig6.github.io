@@ -1,16 +1,14 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
-    header img{
-        float: left;
-    }
+
     header{
         width: 100%;
         font-size: 30px;
         float: right;
     }
-    h1{
-        padding: 5% 0 0 0;
+    header img{
+        float: left;
     }
     nav button { /* hamburger button does not need to be shown */
         display:none;
@@ -21,13 +19,18 @@
         clear: both;
     }
     nav ul {
+
         margin: 0;
         padding: 0;
         overflow: hidden;
+        background-color: #8596FE;
     }
     nav li{
         display: inline; /*makes words horizontal since default is verticle*/
         float: left; /*gets the blocks to float next to each other*/
+    }
+    nav ul li {
+        display: block;
     }
     nav ul li a {
         display: block;/*makes whole link a box to click not just the word*/
