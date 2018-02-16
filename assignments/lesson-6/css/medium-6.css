@@ -1,12 +1,24 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
+    header img{
+        float: left;
+    }
+    header{
+        width: 100%;
+        font-size: 30px;
+        float: right;
+    }
+    h1{
+        padding: 5% 0 0 0;
+    }
     nav button { /* hamburger button does not need to be shown */
         display:none;
     }
     nav{
         margin: 0 auto;
         width: 750px;
+        clear: both;
     }
     nav ul {
         margin: 0;

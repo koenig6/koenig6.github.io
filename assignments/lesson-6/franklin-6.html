@@ -23,8 +23,8 @@
 
         <!-- site navigation use placeholder references -->
         <nav>
-            <button onclick="toggleNavMenu()">&#9776;</button>
-            <ul>
+            <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
@@ -37,7 +37,11 @@
         <main>
             <h2>The City of Franklin</h2>
             <figure class="first-photo">
-                <img src="images/small-town.jpg" atl="City of Franklin" width="450" height="298">
+                <img src="images/franklinOriginalCropped.jpg" atl="City of Franklin" sizes="50vw"
+                     srcset="images/franklin200.jpg 200w,
+                             images/franklin500.jpg 500w,
+                             images/franklin1000.jpg 1000w,
+                             images/franklin1200.jpg 1200w">
             </figure>
             <figure class="second-photo">
                 <img src="images/townByLake.jpeg" atl="Town by a lake" width="400" height="266">
@@ -128,11 +132,11 @@
             <aside>
                 123 Main St. Franklin, MU 83454
             </aside>
-            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather 365 | <span id="currentdate">Current Date Placeholder</span></p>
+           <p class="footer-bar">&copy;2018 All Rights Reserved | Weather 365 | <span id="currentdate"></span></p>
         </footer>
 
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
 
     </body>
 </html>
