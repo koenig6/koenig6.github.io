@@ -1,4 +1,4 @@
-function tired() {
+function date() {
     // Get numbers
 
     var now = new Date();
