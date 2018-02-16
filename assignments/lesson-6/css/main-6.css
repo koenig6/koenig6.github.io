@@ -34,6 +34,7 @@ nav button {
 
 }
 nav ul {
+    display: none;
     list-style-type: none; /*removes bullets*/
     background-color: #8596FE;
     padding: 2px;
@@ -88,7 +89,7 @@ article.two{
 }
 footer {
     margin: 2% auto;
-    height: 5%;
+    height: 8%;
     font-size: 61%; /*percent keeps the words on one line & will get larger as screen increases*/
     text-align: center;
     background-color: #E6E9FF; /*purple background*/
