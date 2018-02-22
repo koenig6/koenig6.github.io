@@ -36,7 +36,6 @@
     }
     .grid{
         grid-template-columns: 1fr 1fr;
-
     }
     section.top{
         display: flex;
@@ -72,4 +71,8 @@
     article.one img { /* responsive images */
         width: 50%;
     }
+    footer {
+        font-size: 13px;
+    }
+
 }
