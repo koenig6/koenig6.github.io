@@ -65,9 +65,6 @@
     article.one {
         display: flex;
     }
-    article.one h3{
-        flex-basis:
-    }
     article.one img { /* responsive images */
         width: 50%;
     }

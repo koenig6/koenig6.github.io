@@ -49,7 +49,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style-type: none; /*removes bullets*/
-    background-color: clear;
     padding: 2px;
     margin: 2px;
 }
