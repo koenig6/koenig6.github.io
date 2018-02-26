@@ -45,6 +45,7 @@
         height: 470px; /*makes picture bigger height wise, auto was too small*/
         font-size: 2em;/*makes print larger*/
         flex-flow: row wrap;
+        margin-top: 75px;
     }
     td,th{
         width: 100px;/*makes my forecast table wider*/
