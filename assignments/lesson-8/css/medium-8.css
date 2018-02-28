@@ -34,6 +34,9 @@
         padding: 10px 10px;
         width: 125px; /*makes link boxes larger to that they are centered*/
     }
+    label{
+        font-size: 20px;
+    }
     .grid{
         grid-template-columns: 1fr 1fr;
     }

@@ -34,66 +34,82 @@
         </nav>
 
         <main>
+            <h2 class="stormcenter">REPORT YOUR STORM</h2>
             <br>
-            <form method ="post" action="/action_page.php" autocomplete="on">
+            <form method ="post" action="/www.foo.com" autocomplete="on">
                 <fieldset>
-                    <br>
-                    Full Name:
-                    <input type="text" name="firstname" required placeholder="John Crichton">
-                    <br><br>
-                    Phone Number:
-                    <input type="tel" name="phone" required placeholder="###-###-####">
-                    <br><br>
-                    Email (optional):
-                    <input type="text" name="email" placeholder="name@email.com">
-                    <br><br>
-                    Zip Code:
-                    <input type="number" name="zip" required>
+
+                    <legend>Personal Information</legend>
+                   <label>
+                       <span>Full Name:</span><input type="text" name="firstname" required placeholder="John Crichton" pattern="[a-zA-Z -_]{3,99}">
+                    </label>
+
+                    <label>
+                        <span>Phone Number:</span><input type="tel" name="phone" required placeholder="1234567890">
+                    </label>
+
+                    <label>
+                        <span>Email (optional):</span><input type="text" name="email" placeholder="name@email.com">
+                    </label>
+
+                    <label>
+                        <span>Zip Code:</span><input type="number" name="zip" required>
+                    </label>
                 </fieldset>
-                <br><br>
+
 
                 <fieldset>
-                <br>
-                    Storm Date:
-                    <input type="date" name="stormDate" autocomplete="off">
-                    <br><br>
-                    Storm Type:
-                    <input name="weather" list="weatherList">
-                    <datalist id="weatherList">
-                        <option value="Flash Flood">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-                    <br><br>
-                    Storm Severity:
-                    <label for="rating">Rating (1 to 10)</label>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span><br>
-                    <br><br>
-                    Storm Region:
-                    <select name="Select Region">
-                        <option value="select region" disabled>Select Region</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville" selected>Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>
-                </fieldset>
-                <br><br>
 
-                Additional Information or Comments:
+                    <legend>Storm Report</legend>
+                    <label>
+                        <span>Storm Date:</span><input type="date" name="stormDate" autocomplete="off">
+                     </label>
+
+                    <label>
+                        <span>Storm Type:</span><input name="weather" list="weatherList">
+                        <datalist id="weatherList">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+
+                    <label>
+                        <span>Storm Severity:</span><label for="rating">Rating (1 to 10)</label>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br>
+                    </label>
+
+                    <label>
+                        <span>Storm Region:</span><select name="Select Region">
+                            <option value="select region" disabled>Select Region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville" selected>Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information or Comments:</legend>
+
+                    <label class="comment-container">
+                        <textarea name="message" rows="10" cols="30" placeholder="Please enter comments here..." >
+                        </textarea>
+                    </label>
+                    <label>
+                        <span>User In-Danger Level:</span>
                 <br>
-                <textarea name="message" rows="10" cols="30" >
-                </textarea>
+                        <input type="radio" name="gender" value="yes" checked> Yes<br>
+                        <input type="radio" name="gender" value="no"> No<br>
+                        <input type="radio" name="gender" value="maybe"> Maybe<br><br>
                 <br><br>
-                User In-Danger Level:
-                <br>
-                <input type="radio" name="gender" value="yes" checked> Yes<br>
-                <input type="radio" name="gender" value="no"> No<br>
-                <input type="radio" name="gender" value="maybe"> Maybe<br><br>
-                <br><br>
-                <input type="submit" onclick="thanks.html">
+                        <input type="submit" class="submit">
+                        <input name="redirect" type="hidden" value="thanks.html">
+                    </label>
+                </fieldset>
             </form>
 
         </main>

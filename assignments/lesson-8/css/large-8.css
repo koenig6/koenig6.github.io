@@ -12,6 +12,7 @@
         width: 225px; /*makes link boxes larger so that they are centered*/
     }
     .grid{
+        width: 100%;
         justify-content: center;
         grid-template-columns:minmax(auto, 30%)minmax(auto, 30%)minmax(auto, 30%);
     }
@@ -28,7 +29,6 @@
     }
     main h2 {
         width: 100%;
-        margin-left: 30px;
     }
     main figure.first-photo{
         width: 100%;

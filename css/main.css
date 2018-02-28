@@ -5,7 +5,7 @@
 * { margin: 0; box-sizing: border-box; }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
     font-family: Arial, sans-serif/* Ubuntu, sans-serif */;
     color: black/* #xxxxxx */;
@@ -17,11 +17,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1rem/* x.xrem */;
+    font-size: 1.4rem/* x.xrem */;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
-
+ul{
+    padding-top: 10px;
+    padding-left: 90px;
+}
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;

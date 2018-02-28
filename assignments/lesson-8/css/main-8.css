@@ -27,7 +27,7 @@ body {/* Declare the base font-family - from google font api or other */
     font-family:'Oswald', 'Slabo 27px', sans-serif;
     margin: auto; /*centers the body element*/
 }
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer, .grid { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     max-width: 1400px;
     margin: auto; /*centers the header, nav, main, and footer element*/
@@ -71,6 +71,38 @@ main {
 }
 main h2 {
     text-align: center; /*makes words in main centered*/
+    font-size: 2em;
+}
+form{
+    margin: 1em 3%;
+}
+fieldset{
+    background-color: ghostwhite;
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: black;
+}
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -8px;
+}
+input,select, textarea,fieldset{
+    border-radius: 5px;
+}
+legend{
+    font-size: 26px;
+    font-weight: bold;
+}
+label{
+    display: block;
+    margin: .5em;
+}
+span{
+    padding-right: .5em;
 }
 .grid{
     display: grid;
@@ -119,6 +151,20 @@ article.one img{
 }
 article.two{
     display: none; /*hides 2nd article and photo*/
+}
+.comment-container{
+    padding: 5px;
+}
+textarea{
+    width: 100%;
+    min-height: 200px;
+}
+input.submit{
+    width: 35%;
+    color: ghostwhite;
+    background-color: #8596FE;
+    box-shadow: 5px 5px 10px thistle;
+    margin: .5em 0;
 }
 footer {
     margin: 2% auto;
