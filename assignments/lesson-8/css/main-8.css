@@ -101,6 +101,9 @@ label{
     display: block;
     margin: .5em;
 }
+label > label{
+    display: inline;
+}
 span{
     padding-right: .5em;
 }
