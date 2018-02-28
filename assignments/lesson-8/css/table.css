@@ -21,7 +21,7 @@ tbody tr th{
 }
 th, td{
     border: 1px solid lightgray;
-    padding: 2%;
+    padding: 7px;
 }
 tr:nth-child(5) :nth-child(3){
     background-color: #628ca6;
