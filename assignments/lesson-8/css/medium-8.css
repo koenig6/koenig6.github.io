@@ -34,6 +34,20 @@
         padding: 10px 10px;
         width: 125px; /*makes link boxes larger to that they are centered*/
     }
+    main img.thanks{
+        width: 75%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main p.thanks{
+        text-align: center;
+        font-size: 30px;
+    }
+    form{
+        margin: 1em 9%;
+    }
     label{
         font-size: 20px;
     }

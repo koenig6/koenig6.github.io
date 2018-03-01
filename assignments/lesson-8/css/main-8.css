@@ -1,10 +1,10 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 @media only screen and (max-width: 37.5em) {
-    .navigation.responsive {
+.navigation.responsive {
         position: relative;
     }
-    .navigation.responsive li {
+.navigation.responsive li {
         background-color: #8596FE;
         display: flex;
         justify-content: center;
@@ -12,13 +12,13 @@
         margin: 2px 0;
         border: 1px solid #ddd;
     }
-    .navigation.responsive li a {
+.navigation.responsive li a {
         padding: 1rem;
         text-align: center;
         display: flex;
         text-decoration:none;
     }
-    .navigation.responsive li a:hover {
+.navigation.responsive li a:hover {
         background-color: thistle;
     }
 }
@@ -26,6 +26,9 @@ body {/* Declare the base font-family - from google font api or other */
     font-size: 16px;
     font-family:'Oswald', 'Slabo 27px', sans-serif;
     margin: auto; /*centers the body element*/
+}
+body.stormcenter{
+    background: linear-gradient(white, ghostwhite, purple);
 }
 header, nav, main, footer, .grid { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -94,11 +97,13 @@ input,select, textarea,fieldset{
     border-radius: 5px;
 }
 legend{
-    font-size: 26px;
+   text-align: center;
+    font-size: 20px;
     font-weight: bold;
 }
 label{
     display: block;
+    text-align: center;
     margin: .5em;
 }
 label > label{
@@ -129,6 +134,13 @@ main figure {/*these came with default code*/
 main figure img {
     width: 100%;
     height: auto;
+}
+main img.thanks{
+    width: 100%;
+    height: auto;
+}
+main p.thanks{
+    text-align: center;
 }
 main figure.second-photo{/*hide 2nd photo*/
     display: none;

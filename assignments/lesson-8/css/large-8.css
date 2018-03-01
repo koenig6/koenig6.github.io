@@ -27,6 +27,16 @@
         display: flex;
         flex-direction: row;
     }
+    main img.thanks{
+        width: 50%;
+        height: auto;
+    }
+    form{
+        margin: 1em 15%;
+    }
+    fieldset{
+      margin-bottom: 2%;
+    }
     main h2 {
         width: 100%;
     }
