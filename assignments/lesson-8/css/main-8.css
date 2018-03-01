@@ -159,8 +159,11 @@ article.one h3{
     text-align: center;
 }
 article.one img{
-    width: 100%; /* fill the page in the small/phone view */
+    width: 100%;/* fill the page in the small/phone view */
     height: auto;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 article.two{
     display: none; /*hides 2nd article and photo*/
