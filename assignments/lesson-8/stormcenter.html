@@ -38,35 +38,19 @@
 
             <form action="https://koenig6.github.io/assignments/lesson-8/thanks.html" >
                 <fieldset>
-
                     <legend>Personal Information</legend>
-                   <label>
-                       <span>Full Name:</span><input type="text" name="firstname" required placeholder="John Crichton" autocomplete="on">
-                    </label>
-
-                    <label>
-                        <span>Phone Number:</span><input type="tel" name="phone" required placeholder="1234567890" autocomplete="on">
-                    </label>
-
-                    <label>
-                        <span>Email (optional):</span><input type="text" name="email" placeholder="name@email.com" autocomplete="on">
-                    </label>
-
-                    <label>
-                        <span>Zip Code:</span><input type="number" name="zip" required autocomplete="on">
-                    </label>
+                    <label><span>Full Name:</span></label><input type="text" name="firstname" required placeholder="John Crichton" autocomplete="on"><br>
+                    <label><span>Phone Number:</span></label><input type="tel" name="phone" required placeholder="1234567890" autocomplete="on"><br>
+                    <label><span>Email (optional):</span></label><input type="text" name="email" placeholder="name@email.com" autocomplete="on"><br>
+                    <label><span>Zip Code:</span></label><input type="number" name="zip" required autocomplete="on">
                 </fieldset>
-
 
                 <fieldset>
 
                     <legend>Storm Report</legend>
-                    <label>
-                        <span>Storm Date:</span><input type="date" name="stormDate">
-                     </label>
 
-                    <label>
-                        <span>Storm Type:</span><input name="weather" list="weatherList">
+                    <label><span>Storm Date:</span> </label><input type="date" name="stormDate"><br>
+                    <label><span>Storm Type:</span></label><input name="weather" list="weatherList"><br>
                         <datalist id="weatherList">
                             <option value="Flash Flood">
                             <option value="Hail">
@@ -74,39 +58,28 @@
                             <option value="Thunderstorm">
                             <option value="Tornado">
                         </datalist>
-                    </label>
-
-                    <label>
-                        <span>Storm Severity:</span><label for="rating">Rating (1 to 10)</label>
+                    <label><span class="severity">Storm Severity:</span></label><br><label for="rating">Rating (1 to 10)</label>
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span><br>
-                    </label>
-
-                    <label>
-                        <span>Storm Region:</span><select name="Select Region">
+                    <label><span>Storm Region:</span></label><select name="Select Region">
                             <option value="select region" disabled>Select Region</option>
                             <option value="franklin">Franklin</option>
                             <option value="greenville" selected>Greenville</option>
                             <option value="springfield">Springfield</option>
                         </select>
-                    </label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Additional Information or Comments:</legend>
-
-                    <label class="comment-container">
                         <textarea name="message" rows="10" cols="30" placeholder="Please enter comments here..." >
                         </textarea>
-                    </label>
-                    <label>
-                        <span>User In-Danger Level:</span><br>
+
+
+                    <label><span>User In-Danger Level:</span></label><br>
                         <input type="radio" name="yes" value="yes" checked> Yes<br>
                         <input type="radio" name="no" value="no"> No<br>
                         <input type="radio" name="maybe" value="maybe"> Maybe<br><br>
                         <input type="submit" class="submit">
-
-                    </label>
                 </fieldset>
             </form>
 
