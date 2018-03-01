@@ -41,7 +41,7 @@
 
                     <legend>Personal Information</legend>
                    <label>
-                       <span>Full Name:</span><input type="text" name="firstname" required placeholder="John Crichton" pattern="[a-zA-Z -_]{3,99}" autocomplete="on">
+                       <span>Full Name:</span><input type="text" name="firstname" required placeholder="John Crichton" autocomplete="on">
                     </label>
 
                     <label>
@@ -100,14 +100,12 @@
                         </textarea>
                     </label>
                     <label>
-                        <span>User In-Danger Level:</span>
-                        <br>
-                        <input type="radio" name="gender" value="yes" checked> Yes<br>
-                        <input type="radio" name="gender" value="no"> No<br>
-                        <input type="radio" name="gender" value="maybe"> Maybe<br><br>
-                        <br><br>
+                        <span>User In-Danger Level:</span><br>
+                        <input type="radio" name="yes" value="yes" checked> Yes<br>
+                        <input type="radio" name="no" value="no"> No<br>
+                        <input type="radio" name="maybe" value="maybe"> Maybe<br><br>
                         <input type="submit" class="submit">
-                        <input name="redirect" type="hidden" value="thanks.html">
+
                     </label>
                 </fieldset>
             </form>
