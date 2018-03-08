@@ -1,11 +1,15 @@
+var weatherObject = new XMLHttpRequest();
 
-    var high = parseFloat(document.getElementById('high').innerHTML);
-    var low = parseFloat(document.getElementById('low').innerHTML);
-    var speed = parseFloat(document.getElementById('speed').innerHTML);
+weatherObject.open('GET','http://api.wunderground.com/api/968f45ebbdd693ec/conditions/q/MN/Franklin.json', true );
 
-    var tempAve = (high + low) / 2;
+weatherObject.send();
 
-    var factor = 35.75 + (0.6215 * tempAve) - (35.75 * (Math.pow(speed, 0.16))) + (0.4275 * tempAve * (Math.pow(speed, 0.16)));
+weatherObject.onload = function () {
 
-document.getElementById('windy').innerHTML = factor.toFixed(1) + " F";
+    var weatherInfo = JSON.parse(weatherObject.responseText)
+    console.log(weatherInfo);
 
+    document.getElementsById('windy').innerHTML = weatherInfo.current_observation.windchill_f;
+
+
+}
