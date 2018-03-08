@@ -1,0 +1,87 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    header{
+        align-items: center;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul li a {
+        padding: 10px 10px;
+        width: 225px; /*makes link boxes larger so that they are centered*/
+    }
+    .grid{
+        width: 100%;
+        justify-content: center;
+        grid-template-columns:minmax(auto, 30%)minmax(auto, 30%)minmax(auto, 30%);
+    }
+    figure > img:hover{
+        box-shadow: 5px 5px 10px gray;
+    }
+    main{
+        margin: 0 auto;
+    }
+    main div.topMain{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    main img.thanks{
+        width: 50%;
+        height: auto;
+    }
+    form{
+        margin: 1em 15%;
+    }
+    fieldset{
+      margin-bottom: 2%;
+    }
+    main h2 {
+        width: 100%;
+    }
+    main figure.first-photo{
+        width: 100%;
+        height: auto;
+       /* float: left;*/
+    }
+    main figure.second-photo{/*shows 2nd photo*/
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+    section.top{
+        width: 50%; /*makes photo only take up half of preset width*/
+        height: 470px; /*makes picture bigger height wise, auto was too small*/
+        font-size: 2em;/*makes print larger*/
+        flex-flow: row wrap;
+        margin-top: 7%;
+    }
+    td,th{
+        width: 100px;/*makes my forecast table wider*/
+        height: 40px;
+    }
+    section.articles{
+        display: flex;
+    }
+    article.one{
+        flex-direction: column;
+        font-size: 1.25em;
+    }
+    article.two{
+        text-align: center;
+        font-size: 1.25em;
+        display: flex;; /*shows 2nd article and photo*/
+        flex-direction: column;
+    }
+    article.one img {
+        width: auto;
+        height: 50%;
+        padding: 5px;
+    }
+    article.two img {
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+}

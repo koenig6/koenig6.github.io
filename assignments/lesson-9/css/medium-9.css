@@ -1,0 +1,92 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+        flex-flow: row wrap;
+    }
+    header div{
+        margin: auto;
+    }
+    nav button { /* hamburger button does not need to be shown */
+        display:none;
+    }
+    nav{
+        margin: 0 auto;
+        width: 750px;
+    }
+    nav ul {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #8596FE;
+    }
+    nav ul li {
+        display: flex;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 10px 10px;
+        width: 125px; /*makes link boxes larger to that they are centered*/
+    }
+    main img.thanks{
+        width: 75%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main p.thanks{
+        text-align: center;
+        font-size: 30px;
+    }
+    form{
+        margin: 1em 9%;
+    }
+    label{
+        font-size: 20px;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    section.top{
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover; /*stretches picture across screen*/
+        height: 200px; /*makes picture bigger height wise, auto was too small*/
+        font-size: 1.5em;/*makes print larger*/
+        flex-direction: row;
+        justify-content: space-around; /*evenly distributes content*/
+        align-items: center; /*centers content top to bottom*/
+    }
+    section.forecast { /* show the 10-day forecast with the medium view and up */
+        display: flex;
+        flex-direction: column; /*puts 10 day on top of forecast*/
+        width: 100%; /*streches forecast across screen*/
+        text-align: center; /*ceters forecast*/
+        margin: auto;
+    }
+    table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    table, td, th {
+        border: 1px solid black;
+    }
+    article.one {
+        display: flex;
+    }
+    article.one img { /* responsive images */
+        width: 50%;
+    }
+    footer {
+        font-size: 13px;
+    }
+
+}
