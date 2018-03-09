@@ -72,9 +72,18 @@ nav ul li a:hover {
 main {
     margin: 2px;
 }
+main h1{
+    text-align: center;
+}
 main h2 {
     text-align: center; /*makes words in main centered*/
     font-size: 2em;
+}
+article li{
+    list-style-type: none;/*removes bullets from JSON on index page*/
+}
+section#home_one{ /*on index page*/
+    text-align: center;
 }
 form{
     margin: 1em 3%;
@@ -118,26 +127,9 @@ label span{
     border-radius: 5px;
     text-align: center;
 }
-.grid-home{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-    border-radius: 5px;
-    text-align: center;
-
-}
-.grid-home > article{
-    border: 1px solid black;
-}
-.grid-home ul{
-    list-style-type: none; /*removes bullets*/
-    padding:inherit;
-}
 .grid img{
     margin: 15px 0 0 0;
 }
-
 .grid > figure{
     border: 1px solid black;
     border-radius: 5px;

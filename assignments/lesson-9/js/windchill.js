@@ -9,7 +9,7 @@ weatherObject.onload = function () {
     var weatherInfo = JSON.parse(weatherObject.responseText)
     console.log(weatherInfo);
 
-    document.getElementsById('windy').innerHTML = weatherInfo.current_observation.windchill_f;
+    document.getElementById('windy').innerHTML = weatherInfo.current_observation.windchill_f;
 
 
 }

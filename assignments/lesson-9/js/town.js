@@ -23,6 +23,14 @@ function populateH2(jsonObj) {
 function showTowns(jsonObj) {
     var towns = jsonObj['towns'];
 
+    var pics =
+        [
+        document.getElementById('franklin'),
+        document.getElementById('greenville'),
+        document.getElementById('placeville'),
+        document.getElementById('springfield')
+    ];
+
     for (var i = 0; i < towns.length; i++)
     {
         if (i == 2)
@@ -37,13 +45,18 @@ function showTowns(jsonObj) {
         var myPara4 = document.createElement('p');
         var myPara5 = document.createElement('p');
         var myList = document.createElement('ul');
+        var myImj = document.createElement('p');
 
         myH2.textContent = towns[i].name;
         myPara1.textContent = 'Motto: ' + towns[i].motto;
         myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
         myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-        myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall + 'inches';
+        myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall + ' inches';
         myPara5.textContent = 'Events:';
+        myImj.textContent = pics[i];
+
+
+
 
         var townEvents = towns[i].events;
         for (var j = 0; j < townEvents.length; j++) {
@@ -59,6 +72,7 @@ function showTowns(jsonObj) {
         myArticle.appendChild(myPara4);
         myArticle.appendChild(myPara5);
         myArticle.appendChild(myList);
+        myArticle.appendChild(myImj);
 
         section.appendChild(myArticle);
     }
