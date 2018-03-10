@@ -161,7 +161,7 @@ section.top{
     flex-direction: column; /*evenly distributes content*/
     text-align: center;
 }
-section.forecast{
+section.cast{
     display: none; /*hides forecast*/
 }
 article.one h3{
