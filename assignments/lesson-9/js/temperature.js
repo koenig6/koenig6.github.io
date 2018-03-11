@@ -1,19 +1,18 @@
-var weatherObject = new XMLHttpRequest();
+var wetObject = new XMLHttpRequest();
 
-weatherObject.open('GET','https://api.wunderground.com/api/968f45ebbdd693ec/conditions/q/MN/Franklin.json', true );
+wetObject.open('GET','https://api.wunderground.com/api/968f45ebbdd693ec/conditions/q/MN/Franklin.json', true );
 
-weatherObject.send();
+wetObject.send();
 
-weatherObject.onload = function () {
+wetObject.onload = function () {
 
-    var weatherInfo = JSON.parse(weatherObject.responseText)
-    console.log(weatherInfo);
+    var wetInfo = JSON.parse(wetObject.responseText)
+    console.log(wetInfo);
 
 
-    document.getElementById('high').innerHTML = weatherInfo.current_observation.temp_f;
-    document.getElementById('wet').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('speed').innerHTML = weatherInfo.current_observation.wind_mph;
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('high').innerHTML = wetInfo.current_observation.temp_f;
+    document.getElementById('wet').innerHTML = wetInfo.current_observation.weather;
+
 
 }
 
