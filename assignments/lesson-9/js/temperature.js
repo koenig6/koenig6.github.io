@@ -10,8 +10,8 @@ weatherObject.onload = function () {
     console.log(weatherInfo);
 
 
-    document.getElementById('high').innerHTML = weInfo.current_observation.temp_f;
-    document.getElementById('wet').innerHTML = weInfo.current_observation.weather;
+    document.getElementById('high').innerHTML = weatherInfo.current_observation.temp_f;
+    document.getElementById('wet').innerHTML = weatherInfo.current_observation.weather;
     document.getElementById('speed').innerHTML = weatherInfo.current_observation.wind_mph;
     document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
 
