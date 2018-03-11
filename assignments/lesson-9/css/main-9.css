@@ -82,8 +82,34 @@ main h2 {
 article li{
     list-style-type: none;/*removes bullets from JSON on index page*/
 }
-section#home_one{ /*on index page*/
+#home_one{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: minmax(100px, auto);
+    border-radius: 5px;
     text-align: center;
+}
+#home_one article{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+}
+#home_two{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5rem;
+    grid-auto-rows: minmax(100px, auto);
+    border-radius: 5px;
+    text-align: center;
+}
+#home_two article{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5rem;
+}
+#home_two img{
+    margin: 15px 0 0 0;
 }
 form{
     margin: 1em 3%;

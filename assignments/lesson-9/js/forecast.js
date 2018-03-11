@@ -10,7 +10,7 @@ wObject.onload = function () {
     var wInfo = JSON.parse(wObject.responseText)
     console.log(wInfo);
 
-    document.getElementById('forecast').innerHTML = wInfo.forecast.txt_forecast;
+    document.getElementById('forecast').innerHTML = wInfo.forecast.txt_forecast.forecastday["0"].fcttext;
 
 
 }

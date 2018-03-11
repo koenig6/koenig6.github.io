@@ -34,16 +34,6 @@
         padding: 10px 10px;
         width: 125px; /*makes link boxes larger to that they are centered*/
     }
-
-    article#weather_story{/* index page*/
-
-      }
-    main figure {
-        margin: .2rem 2%;
-        width:46%;
-        float: right;
-        clear: left;
-    }
     main img.thanks{
         width: 75%;
         height: auto;
@@ -55,16 +45,18 @@
         text-align: center;
         font-size: 30px;
     }
-    /*div#one{
-        display: flex;
-        border: none;
-        justify-content: center;
-    }*/
-    section .home_one{
-
-    }
     section article{
         width: 50%
+    }
+    #home_one{
+        grid-auto-columns: minmax(100px, auto);
+
+    }
+    #home_two{
+        width: 100%;
+        justify-content: center;
+        grid-template-columns:minmax(auto, 30%)minmax(auto, 30%)minmax(auto, 30%);
+
     }
     form{
         margin: 1em 9%;
