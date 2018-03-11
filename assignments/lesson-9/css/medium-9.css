@@ -32,7 +32,7 @@
     nav ul li a {
         text-align: center;
         padding: 10px 10px;
-        width: 125px; /*makes link boxes larger to that they are centered*/
+        width: 125px; /*makes link boxes larger so that they are centered*/
     }
     main img.thanks{
         width: 75%;
@@ -48,15 +48,16 @@
     section article{
         width: 50%
     }
-    #home_one{
-        grid-auto-columns: minmax(100px, auto);
-
+    section#home_one{
+        display: flex;
+        justify-content: center;
     }
     #home_two{
-        width: 100%;
-        justify-content: center;
-        grid-template-columns:minmax(auto, 30%)minmax(auto, 30%)minmax(auto, 30%);
-
+        display: flex;
+    }
+    #home_two article img{
+        width: 100%; /*keeps img in side grid*/
+        height: auto;
     }
     form{
         margin: 1em 9%;
