@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather 365 Your weather, all the time!</title>
+        <meta name="author" content="Jody Koenig">
+        <meta name="description" content="Weather forcast and news for Frankin, Greenville and Springfield ">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header>
+            <div><img src="images/sunCloud.png" width="165" height="130" alt="The site logo"></div>
+            <div><h1>&#9728; Weather 365 &#9730;</h1></div>
+            <div class="subheading">Weather forecasting that is always there for you!</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li class='active'><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="topMain">
+                <div>
+                    <h2>The City of Greenville</h2>
+
+                    <figure class="first-photo">
+                        <img src="images/franklin1200.jpg" alt="City of Franklin" sizes="50vw"
+                             srcset="images/franklin200.jpg 200w,
+                                     images/franklin500.jpg 500w,
+                                     images/franklin1000.jpg 1000w,
+                                     images/franklin1200.jpg 1200w">
+                    </figure>
+
+                    <figure class="second-photo">
+                        <img src="images/townByLake.jpeg" alt="Town by a lake" width="400" height="266">
+                    </figure>
+                </div>
+
+                <section class="top">
+                    <div><h3>Weather Summary</h3></div>
+                    <div class="highlow">
+
+                        <p class="weather"><span id='wet'>Sun</span></p>
+                        <p>Current: <span id="high">90</span>&deg;</p>
+                        <img id ="w_icon" src="" alt="current weather">
+                        <p>Forecast: <span id='forecast'></span></p>
+                    </div>
+
+                    <div class="conditions">
+                        <p>Wind Speed: <span id="speed">5</span> mph</p>
+                        <p>Windchill: <span id="windy"></span>&deg;</p>
+
+                    </div>
+                </section>
+            </div>
+
+            <section class="cast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="images/cartoonSun.jpg" alt="sun" width="25" height="25"></td>
+                            <td><img src="images/cartoonSun.jpg" alt="sun" width="25" height="25"></td>
+                            <td><img src="images/cartoonSunCloud.jpg" alt="sun with cloud" width="25" height="25"></td>
+                            <td><img src="images/cartoonSunCloud.jpg" alt="sun with cloud" width="25" height="25"></td>
+                            <td><img src="images/rainCloud.jpg" alt="rain cloud" width="25" height="25"></td>
+                            <td><img src="images/rainCloud.jpg" alt="rain cloud" width="25" height="25"></td>
+                            <td><img src="images/cartoonlightning.jpg" alt="cloud with lightning" width="25" height="25"></td>
+                            <td><img src="images/cartoonSunCloud.jpg" alt="sun with cloud" width="25" height="25"></td>
+                            <td><img src="images/cartoonSun.jpg" alt="sun" width="25" height="25"></td>
+                            <td><img src="images/cartoonSun.jpg" alt="sun" width="25" height="25"></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="articles">
+                <article class="one">
+                    <h3>Greenville's long winter</h3>
+                    <img src="images/thermometer.jpg" alt="Hot/Cold thermometers" width="256" height="197">
+                    <p class="town-article-one">
+                        Quisque eget felis venenatis, pellentesque lacus et, ultrices magna. Sed convallis metus sit amet turpis lobortis cursus. Mauris ut sodales odio, ac sollicitudin felis. Nam tincidunt lacinia posuere. Duis ac condimentum eros. Vestibulum pulvinar nulla a turpis imperdiet mattis. Suspendisse ullamcorper eros nec leo tincidunt, eget dictum odio rhoncus. In dictum volutpat consequat. Aenean pretium metus id nunc luctus finibus. Aliquam non mattis augue. Curabitur lacinia accumsan neque at dignissim.
+                    </p>
+                </article>
+
+                <article class="two">
+                    <h3>Great weather to hit the trails</h3>
+                    <img src="images/trails.jpeg" alt="Train in forest" width="526" height="350">
+                    <p class="town-article-two">
+                        And it came to pass that they journeyed many days in the wilderness, and they fasted much, and prayed much, that the Lord would grant unto them a portion of his Spirit to go with them, and abide with them. ALMA 12:14 [17:9]: And it came to pass when they had arrived in the borders of the land of the Lamanites, that they separated themselves, and departed one from another, trusting in the Lord, that they should meet again at the close of their harvest: for they supposed that great was the work which they had undertaken.  ALMA 12:21 [17:13]
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <aside>
+                123 Main St. Franklin, MU 83454
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather 365 | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/greenville.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather 365 Your weather, all the time!</title>
+        <meta name="author" content="Jody Koenig">
+        <meta name="description" content="Weather forcast and news for Frankin, Greenville and Springfield ">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Slabo+27px" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header>
+            <div><img src="images/sunCloud.png" width="165" height="130" alt="The site logo"></div>
+            <div><h1>&#9728; Weather 365 &#9730;</h1></div>
+            <div class="subheading">Weather forecasting that is always there for you!</div>
+        </header>
+
+
+        <nav>
+            <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class='index'>
+            <section id="home_one">
+                <article id="weather_story">
+                    <h1>Spring just around the corner in 2018!</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget diam in lorem feugiat porttitor et a    libero. In porta turpis cursus est placerat imperdiet. Nunc dapibus pulvinar rhoncus. Maecenas ac tellus in felis dictum maximus luctus id arcu. Suspendisse cursus vehicula lacus sit amet maximus. Nullam justo ante, facilisis nec efficitur id, faucibus id diam.
+                    </p>
+                    <figure class="home">
+                        <img src="images/groundhog.jpg" alt='town' width="300" height="168">
+                    </figure>
+                </article>
+            </section>
+
+            <section id="home_two">
+
+            </section>
+
+
+        </main>
+        <footer>
+            <aside>
+                123 Main St. Franklin, MU 83454
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Weather 365 | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="js/town.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+
+    </body>
+</html>
