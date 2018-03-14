@@ -219,4 +219,27 @@ footer {
     background-color: #E6E9FF; /*purple background*/
     padding: 2px;
 }
+.container {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+article.weatherStoryText {
+    width: 400px;
+}
+
+section.cityInfo img {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 20px;
+
+}
+
+.weatherStoryPic {
+    max-width: 400px;
+    max-height: 321px;
+}
 
