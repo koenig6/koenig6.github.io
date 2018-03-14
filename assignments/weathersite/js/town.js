@@ -34,9 +34,11 @@ request.onload = function() {
         myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
         myPara4.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall + ' inches';
         myPara5.textContent = 'Events:';
-        myImg.setAttribute('src', '/assignments/weathersite/images/' + towns[i].name + '.jpg');
-        myImg.setAttribute('alt',towns[i] + 'city picture');
-
+        myImg.setAttribute('src', '/images/' + towns[i].name + '.jpg');
+        if (towns[i].name == Franklin)
+            {
+            towns[i] = franklin;
+            }
         var townEvents = towns[i].events;
         for (var j = 0; j < townEvents.length; j++) {
             var listItem = document.createElement('li');
