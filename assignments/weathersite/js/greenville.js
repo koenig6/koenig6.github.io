@@ -1,39 +1,40 @@
-var weatherGreenville = new XMLHttpRequest();
+//current
 
-weatherGreenville.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/conditions/q/NC/Greenville.json', true);
+var weatherObject = new XMLHttpRequest();
 
-weatherGreenville.send();
+weatherObject.open('GET','https://api.wunderground.com/api/968f45ebbdd693ec/conditions/q/NC/Greenville.json', true );
 
-weatherGreenville.onload = function () {
+weatherObject.send();
 
-    var weatherInfo = JSON.parse(weatherGreenville.responseText);
+weatherObject.onload = function () {
+
+    var weatherInfo = JSON.parse(weatherObject.responseText)
     console.log(weatherInfo);
 
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
 
-    document.getElementById('speed').innerHTML = weatherInfo.current_observation.wind_mph;
-
+    document.getElementById('high').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('wet').innerHTML = weatherInfo.current_observation.weather;
+    document.getElementById('speed').innerHTML = weatherInfo.current_observation.wind_mph;
+    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('windy').innerHTML = weatherInfo.current_observation.windchill_f;
 
-    document.getElementById('windy').innerHTML = weatherInfo.current_observation.windchill_string;
-
-
-
-} //end of onload
-
-
-// Current Conditions for Greenville
+}
 
 
+// forecast
 
-var currentW = new XMLHttpRequest();
+var wObject = new XMLHttpRequest();
 
-currentW.open('GET', 'https://api.wunderground.com/api/1f7ee438ba530e58/forecast/q/NC/Greenville.json', true);
-currentW.send();
+wObject.open('GET','https://api.wunderground.com/api/968f45ebbdd693ec/forecast/q/NC/Greenville.json', true );
 
-currentW.onload = function () {
+wObject.send();
 
-    var weatherI = JSON.parse(currentW.responseText);
-    console.log(weatherI);
+wObject.onload = function () {
 
-    document.getElementById('forecast').innerHTML = weatherI.forecast.txt_forecast.forecastday["0"].fcttext;
+    var wInfo = JSON.parse(wObject.responseText)
+    console.log(wInfo);
+
+    document.getElementById('forecast').innerHTML = wInfo.forecast.txt_forecast.forecastday["0"].fcttext;
+
+
+}
