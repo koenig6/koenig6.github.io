@@ -9,7 +9,7 @@ weatherObject.send();
 weatherObject.onload = function () {
 
     var weatherInfo = JSON.parse(weatherObject.responseText)
-    console.log(wetInfo);
+    console.log(weatherInfo);
 
 
     document.getElementById('high').innerHTML = weatherInfo.current_observation.temp_f;
