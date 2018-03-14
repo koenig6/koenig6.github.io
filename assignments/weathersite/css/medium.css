@@ -46,7 +46,7 @@
         font-size: 30px;
     }
     section article{
-        width: 50%
+        width: 100%;
     }
     section#home_one{
         display: flex;
@@ -92,12 +92,16 @@
     }
     table, td, th {
         border: 1px solid black;
+        padding: 1%;
     }
     article.one {
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
     article.one img { /* responsive images */
         width: 50%;
+
     }
     footer {
         font-size: 13px;

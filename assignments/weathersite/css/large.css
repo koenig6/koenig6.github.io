@@ -53,7 +53,7 @@
     section.top{
         width: 50%; /*makes photo only take up half of preset width*/
         height: 470px; /*makes picture bigger height wise, auto was too small*/
-        font-size: 2em;/*makes print larger*/
+        font-size: 1.55em;/*makes print larger*/
         flex-flow: row wrap;
         margin-top: 7%;
     }
@@ -67,12 +67,14 @@
     article.one{
         flex-direction: column;
         font-size: 1.25em;
+        padding: 2%
     }
     article.two{
         text-align: center;
         font-size: 1.25em;
         display: flex;; /*shows 2nd article and photo*/
         flex-direction: column;
+        padding: 2%
     }
     article.one img {
         width: auto;
