@@ -205,7 +205,7 @@ textarea{
     min-height: 200px;
 }
 input{
-    padding: 3%;
+    padding: .5%;
 }
 input.submit{
     width: 35%;
