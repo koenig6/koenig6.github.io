@@ -204,6 +204,9 @@ textarea{
     width: 100%;
     min-height: 200px;
 }
+input{
+    padding: 3%;
+}
 input.submit{
     width: 35%;
     color: ghostwhite;
