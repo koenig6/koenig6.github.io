@@ -25,7 +25,7 @@
 "type4":"Install Mechanical Disc Brakes",
 "price4":"$14.99",
 "type5":"Install Rim Brake Set",
-"price5":"$12.99",
+"price5":"$12.99"
 },
 {
 "name": "Drivetrain",
@@ -38,7 +38,7 @@
 "type4":"Install Pedals",
 "price4":"$4.99",
 "type5":"Install Crank (1 Piece)",
-"price5":"$14.99",
+"price5":"$14.99"
 },
 {
 "name":  "Shifter/Derailleur",
@@ -51,7 +51,7 @@
 "type4":"Install Shifter (Each)",
 "price4":"$12.99",
 "type5":"Install Shifter Cables/Housing",
-"price5":"$12.99",
+"price5":"$12.99"
 },
 {
 "name":  "Wheels",
@@ -64,7 +64,7 @@
 "type4":"Install Spoke (Each)",
 "price4":"$5.99",
 "type5":"Adjust Hub (Front or Rear)",
-"price5":"$5.99",
+"price5":"$5.99"
 },
 {
 "name":  "Handlebars/Fork/Headset",
@@ -77,7 +77,7 @@
 "type4":"Install Handlebar Tape",
 "price4":"$8.99",
 "type5":"Install Fork",
-"price5":"$34.99",
+"price5":"$34.99"
 },
 {
 "name":"Installs",
@@ -90,7 +90,7 @@
 "type4":"Kickstand",
 "price4":"$1.99",
 "type5":"Rear Rack",
-"price5":"$4.99",
+"price5":"$4.99"
 }
 ]
 }

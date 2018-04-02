@@ -1,17 +1,7 @@
-//reference parts of HTML in variables
-var tuneUps = document.querySelector('div.tune-Ups');
-var brakes = document.querySelector('div.brakes');
-var drivetrain = document.querySelector('div.drivetrain');
-var shifter = document.querySelector('div.shifter');
-var wheels = document.querySelector('div.wheels');
-var handlebars = document.querySelector('div.handlebars');
-var installs = document.querySelector('div.installs');
+var section = document.querySelector('#serviceSummary')
 
+var requestURL = 'https://koenig6.github.io/theMountainSpoke/data.json';
 
-//JSON url stored into variable
-var requestURL = 'koenig6.github.io';
-
-//create and open request
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 
@@ -28,7 +18,7 @@ request.onload = function () {
 
 //create service information sections
 function displayService(jsonObj) {
-    var serve = jsonObj['services'];
+    var services = jsonObj['services'];
 
     for (var i = 0; i < service.length; i++) {
         var myTable = document.createElement('table');
