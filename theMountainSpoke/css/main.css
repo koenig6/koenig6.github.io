@@ -1,0 +1,153 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+@media only screen and (max-width: 37.5em) {
+    * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive li {
+        background-color: #FFCE00;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+
+    }
+    .navigation.responsive li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration:none;
+
+    }
+    .navigation.responsive li a:hover {
+        background-color: #007849;
+}
+    .hamburger{
+        display: block;
+        /*position: absolute;*/
+        top: 8.50rem;
+        right: 1.25rem;
+    }
+
+    body {/* Declare the base font-family - from google font api or other */
+        font-size: 16px;
+        color: #262228;
+        margin: auto; /*centers the body element*/
+        font-family: 'Playfair Display', serif;
+
+
+}
+    header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+        max-width: 1400px;
+        margin: auto; /*centers the header, nav, main, and footer element*/
+        font-family: 'Playfair Display', serif;
+
+}
+    header {
+        text-align: center;
+        font-size: 1em;
+    }
+    header h1 {}
+    header img {}
+    header .subheading {}
+    nav {}
+    nav button {
+        display: block;
+        margin: 3px;
+
+}
+    nav ul {
+    display: block;
+    list-style-type: none; /*removes bullets*/
+    background-color: clear;
+    padding: 2px;
+    margin: 2px;
+}
+    nav ul li {
+    display: none;
+    text-align: center; /*centers text to middle of li element*/
+}
+    nav ul li a {
+        text-decoration: none; /*removes line under link*/
+        color: #262228; /* makes the words dark*/
+}
+    nav ul li.active a {
+        background-color: #0375B4; /*makes current page link blue*/
+        color: #FFFFFF;
+}
+    #scroller {/*for sales page*/
+        /*position: relative;*/
+    }
+    #slider {/*for sales page*/
+        overflow: hidden;
+       /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;*/
+        width: 720px;
+        height: 400px;
+    }
+    #slider .slides {/*for sales page*/
+       /* padding: 0;
+        margin: 0;
+        position: relative;*/
+        display: block;
+        width: 6000px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+
+    }
+    #slider .slide {/*for sales page*/
+       /* padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: absolute;*/
+        float: left;
+        list-style-type: none;
+        width: 720px;
+        height: 400px;
+    }
+    main {}
+    main h2 {}
+    main figure { margin: 0 0 .2rem 2%; width:96%; }
+    main figure img { width: 100%; }
+    .grid{/*for adventure tours*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(100px, auto);
+        border-radius: 5px;
+        text-align: center;
+    }
+    .grid img{/*for adventure tours*/
+        margin: 15px 0 0 0;
+    }
+    .grid > figure{/*for adventure tours*/
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    table{/*adventure tours*/
+        margin: 0 auto;
+        margin-top: 13%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section {}
+    article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: ???; /* fill the page in the small/phone view */
+    margin: ???;
+}
+    footer {
+        background-color: #007849;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    footer aside {}
+    footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+    /* Other Class Selectors */
+
+}

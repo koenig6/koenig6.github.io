@@ -1,0 +1,89 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    header {
+        text-align: center;
+        font-size: 1em;
+    }
+    nav button { /* hamburger button does not need to be shown */
+        display:none;
+    }
+
+    nav{
+        margin: 0 auto;
+        width: 870px;
+        clear: both;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav li{
+        display: inline; /*makes words horizontal since default is verticle*/
+        float: left; /*gets the blocks to float next to each other*/
+        background-color: #FFCE00;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        display: block;/*makes whole link a box to click not just the word*/
+        text-align: center;
+        padding: 10px 10px;
+        width: 125px; /*makes link boxes larger to that they are centered*/
+
+    }
+    nav ul li a:hover {
+        background-color: #007849; /*when mouse is on nav link it will be this color*/
+        color: #FFFFFF;
+    }
+    nav ul li.active a {
+        background-color: #0375B4; /*makes current page link blue*/
+        color: #FFFFFF;
+    }
+    #slider {/*for sales page*/
+        overflow: hidden;
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;*/
+        width: 720px;
+        height: 400px;
+    }
+    #slider .slides {/*for sales page*/
+        /* padding: 0;
+        margin: 0;
+        position: relative;*/
+        display: block;
+        width: 6000px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+
+    }
+    #slider .slide {/*for sales page*/
+        /* padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: absolute;*/
+        float: left;
+        list-style-type: none;
+        width: 720px;
+        height: 400px;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {
+        background-color: #007849;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
+
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+}
+

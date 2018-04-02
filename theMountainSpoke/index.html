@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Mountain Spoke</title>
+        <meta name="author" content="Jody Koenig">
+        <meta name="description" content="The Mountain Spoke home page serving bicycle enthusiast in the Bozeman Montana region and  around the world ">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+        <header>
+            <h1>The Mountain Spoke</h1>
+            <img src="img/logo.jpg" alt="The site logo" width="149" height="117">
+            <div class="subheading">Giving bicycle enthusiasts the BEST service since 1978</div>
+        </header>
+
+        <nav>
+            <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="adventureTours.html">Adventure Tours</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <img src="img/home1-400x266.jpg" alt="bicyclists riding in sidewalk in open field" width="400" height="266">
+            <img src="img/home2-400x269.jpeg" alt="two bicycles in the sunset" width="400" height="269">
+
+                <img src="img/homeEvent400x266.jpeg" alt="bicycle racers" width="400" height="266">
+            <p>Sign up now for our Cycle the Continental Divide annual event!  For more information click the button.</p>
+            <form action="/koenig6.github.io/assignments/theMountainSpoke/event.html">
+                <input type="submit" value="I want Adventure!" />
+            </form>
+
+        </main>
+
+        <footer>
+            <aside>
+                3950 Valley Commons Drive Bozeman, MT
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span> | <a href="resourcePage.html">Resource Page</a></p>
+        </footer>
+
+        <script src="js/hamburger.js"></script>
+        <script src="js/currentdate.js"></script>
+
+    </body>
+</html>
