@@ -32,17 +32,12 @@
     body {/* Declare the base font-family - from google font api or other */
         font-size: 16px;
         color: #262228;
-        margin: auto; /*centers the body element*/
         font-family: 'Playfair Display', serif;
-
-
+        margin: auto; /*centers*/
 }
     header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
         max-width: 1400px;
-        margin: auto; /*centers the header, nav, main, and footer element*/
-        font-family: 'Playfair Display', serif;
-
 }
     header {
         text-align: center;
@@ -114,6 +109,51 @@
     main h2 {}
     main figure { margin: 0 0 .2rem 2%; width:96%; }
     main figure img { width: 100%; }
+    table{/*for service*/
+        margin: 0 auto;
+        margin-top: 13%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-collapse: collapse;
+        box-shadow: 5px 5px 10px #628ca6;
+    }
+    thead{/*for service*/
+        font-size: 1.75em;
+    }
+    th, td{/*for service*/
+        border: 1px solid black;
+        padding: 7px;
+    }
+    tr{/*for service*/
+        border: 1px solid black;
+    }
+    input[name="name"]{
+        background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_user.png")
+    }
+    input,select, textarea,fieldset{
+        border-radius: 5px;
+
+    }
+    .contact > input{ /*contact*/
+        height: 60px;
+        width: 300px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .contact{/*contact us*/
+        font-size: 16px;
+        border: 1px solid #dfe2e2;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input.submit{
+        color: #262228;
+        background-color: #FFCE00;
+        box-shadow: 5px 5px 10px lightsteelBlue;
+    }
     .grid{/*for adventure tours*/
         display: grid;
         grid-template-columns: repeat(1, 1fr);

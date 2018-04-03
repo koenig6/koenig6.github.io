@@ -11,16 +11,11 @@ request.send();
 
 //waiting for response and dealing with it when it arrives
 request.onload = function () {
-    var serviceInfo = request.response;
-    displayService(serviceInfo);
-}
+    var servicedata = request.response;
+    var services = servicedata['services'];
 
-
-//create service information sections
-function displayService(jsonObj) {
-    var services = jsonObj['services'];
-
-    for (var i = 0; i < service.length; i++) {
+    for (var i = 0; i < services.length; i++)
+    {
         var myTable = document.createElement('table');
         var myThead = document.createElement('thead');
         var myTheadTr = document.createElement('tr');
@@ -43,45 +38,63 @@ function displayService(jsonObj) {
         var myTbodyTh5b = document.createElement('th');
 
 
-        myTheadTr.textContent = serve[i].name;
-        myTbodyTh1a.textContent = serve[i].type1;
-        myTbodyTh1b.textContent = serve[i].price1;
-        myTbodyTh2a.textContent = serve[i].type2;
-        myTbodyTh2b.textContent = serve[i].price2;
-        myTbodyTh3a.textContent = serve[i].type3;
-        myTbodyTh3a.textContent = serve[i].price3;
-        myTbodyTh4a.textContent = serve[i].type4;
-        myTbodyTh4b.textContent = serve[i].price4;
-        myTbodyTh5a.textContent = serve[i].type5;
-        myTbodyTh5b.textContent = serve[i].price5;
+        myThead.textContent;
+        myTheadTr.textContent;
+        myTheadTh.textContent = services[i].name;
+        myTbody.textContent;
+        myTbodyTr1.textContent;
+        myTbodyTh1a.textContent = services[i].type1;
+        myTbodyTh1b.textContent = services[i].price1;
+        myTbodyTr2.textContent;
+        myTbodyTh2a.textContent = services[i].type2;
+        myTbodyTh2b.textContent = services[i].price2;
+        myTbodyTr3.textContent;
+        myTbodyTh3a.textContent = services[i].type3;
+        myTbodyTh3b.textContent = services[i].price3;
+        myTbodyTr4.textContent;
+        myTbodyTh4a.textContent = services[i].type4;
+        myTbodyTh4b.textContent = services[i].price4;
+        myTbodyTr5.textContent;
+        myTbodyTh5a.textContent = services[i].type5;
+        myTbodyTh5b.textContent = services[i].price5;
+
+
+        myTable.appendChild(myThead);
+        myThead.appendChild(myTheadTr);
+        myTheadTr.appendChild(myTheadTh);
+
+        myTable.appendChild(myTbody);
+        myTbody.appendChild(myTbodyTr1);
+        myTbodyTr1.appendChild(myTbodyTh1a);
+        myTbodyTr1.appendChild(myTbodyTh1b);
+
+        myTable.appendChild(myTbody);
+        myTbody.appendChild(myTbodyTr2);
+        myTbodyTr2.appendChild(myTbodyTh2a);
+        myTbodyTr2.appendChild(myTbodyTh2b);
+
+        myTable.appendChild(myTbody);
+        myTbody.appendChild(myTbodyTr3);
+        myTbodyTr3.appendChild(myTbodyTh3a);
+        myTbodyTr3.appendChild(myTbodyTh3b);
+
+        myTable.appendChild(myTbody);
+        myTbody.appendChild(myTbodyTr2);
+        myTbodyTr4.appendChild(myTbodyTh4a);
+        myTbodyTr4.appendChild(myTbodyTh4b);
+
+        myTable.appendChild(myTbody);
+        myTbody.appendChild(myTbodyTr5);
+        myTbodyTr5.appendChild(myTbodyTh5a);
+        myTbodyTr5.appendChild(myTbodyTh5b);
 
 
 
-        myTable.appendChild(myTheadTr);
-        myTable.appendChild(myTbodyTh1a);
-        myTable.appendChild(myTbodyTh1b);
-        myTable.appendChild(myTbodyTh2a);
-        myTable.appendChild(myTbodyTh2b);
-        myTalbe.appendChild(myTbodyTh3a);
-        myTable.appendChild(myTbodyTh3a);
-        myTable.appendChild(myTbodyTh4a);
-        myTable.appendChild(myTbodyTh4b);
-        myTable.appendChild(myTbodyTh5a);
-        myTable.appendChild(myTbodyTh5b);
-        if (serve[i].name == "Tune-Ups") {
-            tuneUps.appendChild(myTable);
-        } else if (serve[i].name == "Brakes") {
-            brakes.appendChild(myTable);
-        } else if (serve[i].name == "Drivetrain") {
-            drivetrain.appendChild(myTable);
-        } else if (serve[i].name == "Shifter") {
-            shifter.appendChild(myTable);
-        } else if (serve[i].name == "Wheels") {
-            wheels.appendChild(myTable);
-        } else if (serve[i].name == "Handlebars") {
-            handlebars.appendChild(myTable);
-        } else if (serve[i].name == "Installs") {
-            installs.appendChild(myArticle);
-        }
+        section.appendChild(myTable);
     }
 }
+
+
+
+
+
