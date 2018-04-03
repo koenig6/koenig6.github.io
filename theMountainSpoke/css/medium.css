@@ -63,6 +63,27 @@
     tr{/*for service*/
         border: 1px solid black;
     }
+    input,select, textarea,fieldset{
+        border-radius: 5px;
+
+    }
+    .contact > input{ /*contact*/
+        height: 60px;
+        width: 300px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .contact{/*contact us*/
+        font-size: 16px;
+        border: 1px solid #dfe2e2;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    input.submit{
+        color: #262228;
+        background-color: #FFCE00;
+        box-shadow: 5px 5px 10px lightsteelBlue;
+    }
     #slider {/*for sales page*/
         overflow: hidden;
         /* position: absolute;
