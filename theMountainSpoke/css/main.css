@@ -1,6 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 @media only screen and (max-width: 37.5em) {
-    * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
     .navigation.responsive {
         position: relative;
     }
@@ -10,7 +11,6 @@
         width: 100%;
         margin: 2px 0;
         border: 1px solid #ddd;
-
     }
     .navigation.responsive li a {
         padding: 1rem;
@@ -28,25 +28,21 @@
         top: 8.50rem;
         right: 1.25rem;
     }
-
+}
     body {/* Declare the base font-family - from google font api or other */
-        font-size: 16px;
         color: #262228;
         font-family: 'Playfair Display', serif;
-        margin: auto; /*centers*/
+        margin: 0 auto; /*centers*/
 }
     header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
         max-width: 1400px;
+        margin: auto;
 }
     header {
         text-align: center;
         font-size: 1em;
     }
-    header h1 {}
-    header img {}
-    header .subheading {}
-    nav {}
     nav button {
         display: block;
         margin: 3px;
@@ -71,23 +67,12 @@
         background-color: #0375B4; /*makes current page link blue*/
         color: #FFFFFF;
 }
-    #scroller {/*for sales page*/
-        /*position: relative;*/
-    }
     #slider {/*for sales page*/
         overflow: hidden;
-       /* position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;*/
         width: 720px;
         height: 400px;
     }
     #slider .slides {/*for sales page*/
-       /* padding: 0;
-        margin: 0;
-        position: relative;*/
         display: block;
         width: 6000px;
         height: 400px;
@@ -96,20 +81,24 @@
 
     }
     #slider .slide {/*for sales page*/
-       /* padding: 0;
-        margin: 0;
-        list-style-type: none;
-        position: absolute;*/
         float: left;
         list-style-type: none;
         width: 720px;
         height: 400px;
     }
-    main {}
-    main h2 {}
-    main figure { margin: 0 0 .2rem 2%; width:96%; }
-    main figure img { width: 100%; }
-    table{/*for service*/
+    main figure {
+        margin: 0 0 .2rem 2%;
+        width:96%;
+}
+    main figure img {
+        width: 100%;
+}
+article.itnerary{
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+}
+table{/*for service*/
         margin: 0 auto;
         margin-top: 13%;
         margin-left: auto;
@@ -118,43 +107,57 @@
         border-collapse: collapse;
         box-shadow: 5px 5px 10px #628ca6;
     }
-    thead{/*for service*/
+thead{/*for service*/
         font-size: 1.75em;
     }
-    th, td{/*for service*/
+th, td{/*for service*/
         border: 1px solid black;
         padding: 7px;
     }
-    tr{/*for service*/
+tr{/*for service*/
         border: 1px solid black;
     }
-    input[name="name"]{
+input[name="firstname"]{/*contact and event*/
         background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_user.png")
     }
-    input,select, textarea,fieldset{
-        border-radius: 5px;
-
+input[name="phone"]{/*contact and event*/
+        background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_phone.png")
     }
-    .contact > input{ /*contact*/
+input[name="email"]{/*contact and event*/
+        background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_email.png")
+    }
+input,select, textarea,fieldset{/*contact*/
+        border-radius: 5px;
+    }
+iframe{/*contact and event*/
+        display: block;
+        margin: 0 auto;
+    }
+input{ /*contact and event*/
         height: 60px;
         width: 300px;
-        padding: 15px;
-        margin-bottom: 20px;
+        padding: 24px 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-repeat: no-repeat;/*contact and event img*/
+        background-position: 15px 22px;/*contact and event img*/
     }
-    .contact{/*contact us*/
-        font-size: 16px;
+.contact{/*contact us and event*/
         border: 1px solid #dfe2e2;
         margin-bottom: 30px;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
     }
-    input.submit{
-        color: #262228;
+input.submit{/*contact and event*/
         background-color: #FFCE00;
         box-shadow: 5px 5px 10px lightsteelBlue;
+
     }
-    .grid{/*for adventure tours*/
+textarea{
+        border-style: inset;
+        border-width: 2px;
+        margin-top: 10px;
+    }
+.grid{/*for adventure tours*/
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 5px;
@@ -162,32 +165,30 @@
         border-radius: 5px;
         text-align: center;
     }
-    .grid img{/*for adventure tours*/
-        margin: 15px 0 0 0;
-    }
-    .grid > figure{/*for adventure tours*/
+.grid img{/*for adventure tours*/
+        margin: 15px 15px 15px 15px;
+}
+.grid > figure{/*for adventure tours*/
         border: 1px solid black;
-        border-radius: 5px;
+        border-radius: 5px;/*rounds ccorners*/
     }
-    table{/*adventure tours*/
-        margin: 0 auto;
-        margin-top: 13%;
+table{/*adventure tours and service*/
+        margin: 15px auto;
         text-align: center;
         border-collapse: collapse;
     }
-    section {}
-    article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: ???; /* fill the page in the small/phone view */
-    margin: ???;
-}
     footer {
         background-color: #007849;
         color: #FFFFFF;
         text-align: center;
+        width: 85%;
+        padding: 1%;
     }
-    footer aside {}
-    footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+    a {
+        text-decoration: none;
+
+}
 
     /* Other Class Selectors */
 
-}
+

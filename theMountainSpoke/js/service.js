@@ -20,6 +20,7 @@ request.onload = function () {
         var myThead = document.createElement('thead');
         var myTheadTr = document.createElement('tr');
         var myTheadTh = document.createElement('th');
+        var myTheadTh2 = document.createElement('th');
         var myTbody = document.createElement('tbody');
         var myTbodyTr1 = document.createElement('tr');
         var myTbodyTh1a = document.createElement('th');
@@ -41,6 +42,7 @@ request.onload = function () {
         myThead.textContent;
         myTheadTr.textContent;
         myTheadTh.textContent = services[i].name;
+        myTheadTh2.textContet = services[i].catagory;
         myTbody.textContent;
         myTbodyTr1.textContent;
         myTbodyTh1a.textContent = services[i].type1;
@@ -62,6 +64,7 @@ request.onload = function () {
         myTable.appendChild(myThead);
         myThead.appendChild(myTheadTr);
         myTheadTr.appendChild(myTheadTh);
+        myTheadTr.appendChild(myTheadTh2);
 
         myTable.appendChild(myTbody);
         myTbody.appendChild(myTbodyTr1);

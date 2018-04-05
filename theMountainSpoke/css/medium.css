@@ -1,14 +1,14 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-
-    header {
-        text-align: center;
-        font-size: 1em;
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-flow: row wrap;
     }
     nav button { /* hamburger button does not need to be shown */
         display:none;
     }
-
     nav{
         margin: 0 auto;
         width: 870px;
@@ -29,9 +29,9 @@
     }
     nav ul li a {
         display: block;/*makes whole link a box to click not just the word*/
-        text-align: center;
         padding: 10px 10px;
-        width: 125px; /*makes link boxes larger to that they are centered*/
+        width: 145px;  /* makes link boxes larger to that they are centered*/
+
 
     }
     nav ul li a:hover {
@@ -42,42 +42,44 @@
         background-color: #0375B4; /*makes current page link blue*/
         color: #FFFFFF;
     }
-    table{/*for service*/
-        float: left;
+    article.itnerary{/*interary*/
+        width: 850px; /*centers text*/
+
+    }
+    #serviceSummary{/*Just for service*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section>table{/*JUST for service*/
+       /* float: left;
         clear: right;
-        margin:  1%;
-        /*margin-top: 1%;
-        margin-left: 1%;
-        margin-right: 1%;*/
-        text-align: center;
+        margin:  3%;
+        text-align: center;*/
         border-collapse: collapse;
         box-shadow: 5px 5px 10px #628ca6;
     }
-    thead{/*for service*/
+    figure>img{/*JUST for adventure tours*/
+        width: 73%;
+        height: auto;
+    }
+    figure>table{
+        width: 95%;
+        height: auto;
+    }
+    thead{/*for service and adventure tours*/
         font-size: 1.75em;
     }
-    th, td{/*for service*/
+    th, td{/*for service and adventure tours*/
         border: 1px solid black;
         padding: 7px;
     }
-    tr{/*for service*/
+    tr{/*for service and adventure tours*/
         border: 1px solid black;
     }
-    input,select, textarea,fieldset{
-        border-radius: 5px;
-
-    }
-    .contact > input{ /*contact*/
-        height: 60px;
-        width: 300px;
-        padding: 15px;
-        margin-bottom: 20px;
-    }
-    .contact{/*contact us*/
-        font-size: 16px;
-        border: 1px solid #dfe2e2;
-        margin-bottom: 30px;
-        text-align: center;
+    form{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
     }
     input.submit{
         color: #262228;
@@ -119,14 +121,9 @@
         grid-template-columns: 1fr 1fr;
     }
     footer {
-        background-color: #007849;
-        color: #FFFFFF;
-        text-align: center;
         clear: both; /*for tables in service*/
     }
-    section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
 
-    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
 }
 

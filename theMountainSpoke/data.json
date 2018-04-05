@@ -2,6 +2,7 @@
 "services" : [
 {
 "name": "Tune-Ups",
+"catagory": "Price",
 "type1": "Basic Tune-Up",
 "price1": "$39.99",
 "type2":"Premium Tune-Up",
@@ -16,6 +17,7 @@
 },
 {
 "name":  "Brakes",
+"catagory": "Price",
 "type1":"Adjust/Install Rim Brake Pads",
 "price1":"$9.99",
 "type2":"Adjust/Install Disc Brake Pads",
@@ -29,6 +31,7 @@
 },
 {
 "name": "Drivetrain",
+"catagory": "Price",
 "type1":"Install or Overhaul Bottom Bracket",
 "price1":"$14.99",
 "type2":"Install Chain",
@@ -42,6 +45,7 @@
 },
 {
 "name":  "Shifter/Derailleur",
+"catagory": "Price",
 "type1":"Adjust Derailleur (Front or Rear)",
 "price1":"$14.99",
 "type2":"Install Front Derailleur",
@@ -55,6 +59,7 @@
 },
 {
 "name":  "Wheels",
+"catagory": "Price",
 "type1":"Install Inner Tube",
 "price1":"$6.99",
 "type2":"Repair Inner Tube",
@@ -67,7 +72,8 @@
 "price5":"$5.99"
 },
 {
-"name":  "Handlebars/Fork/Headset",
+"name":  "Handlebars/Fork",
+"catagory": "Price",
 "type1":"Install Handlebars",
 "price1":"$9.99",
 "type2":"Install Bar Ends",
@@ -81,6 +87,7 @@
 },
 {
 "name":"Installs",
+"catagory": "Price",
 "type1":"Child Carrier",
 "price1":"$14.99",
 "type2":"Cycle Computer",
