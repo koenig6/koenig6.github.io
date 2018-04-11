@@ -23,7 +23,9 @@
     .grid{/*adventure tours*/
         width: 100%;
         justify-content: center;
-        grid-template-columns:minmax(auto, 45%)minmax(auto, 45%);
+        grid-template-columns:minmax(auto, 30%)minmax(auto, 30%);
+
+
     }
     .contain{/*events*/
         display: flex;

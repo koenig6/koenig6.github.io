@@ -49,7 +49,6 @@
     nav ul {
     display: block;
     list-style-type: none; /*removes bullets*/
-    background-color: clear;
     padding: 2px;
     margin: 2px;
 }
