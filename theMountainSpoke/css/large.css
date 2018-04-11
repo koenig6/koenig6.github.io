@@ -1,6 +1,9 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
+    header{
+        width: 57%;
+    }
     nav{
         width: 1400px;
     }
@@ -29,12 +32,12 @@
     select{/*events*/
         margin-bottom: 20px;
     }
-    .usThree{
+    .usThree{/*contact*/
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .usThree>input{
+    .usThree>input{/*contact*/
         width: 33%;
     }
 
