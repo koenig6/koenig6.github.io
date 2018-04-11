@@ -31,6 +31,6 @@ $(function(){
 
     $slider.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
 
-    startSlider();
+
 
 });
