@@ -33,40 +33,42 @@
         </nav>
 
         <main>
-            <ul>
+            <ul class="event">
                 <li>Trip Dates: July 14, 2018 - July 20, 2018</li>
                 <li>Cost: $1,100</li>
                 <li>Location: Whitefish, MT</li>
                 <li>Difficulty: Intermediate</li>
                 <li><a href="itnerary.html">Itinerary</a></li>
             </ul>
-            <p>Sample our heralded Great Divide Mountain Bike Route, fully supported and load free! We’ll travel from the lively resort town of Whitefish, located near Glacier National Park, to the southern end of the spectacular Swan Range, one of Montana’s less-visited geologic gems. Not far away lies Flathead Lake, the largest natural freshwater lake in the West.<br><br> Riding mostly on U.S. Forest Service roads and a bit of singletrack, we’ll experience the high country of one of the world’s great wildland complexes. Along the way, we’ll encounter a variety of flora and fauna — the sharp-eyed might even spot wild huckleberries ripe for the picking or the occasional bear on a distant hillside. We’ll skirt the southern boundaries of the Bob Marshall and Scapegoat wilderness areas and crest the Continental Divide on a loop near Lincoln, our ultimate destination.</p>
 
 
-
-
-
+            <p class="divide">Sample our heralded Great Divide Mountain Bike Route, fully supported and load free! We’ll travel from the lively resort town of Whitefish, located near Glacier National Park, to the southern end of the spectacular Swan Range, one of Montana’s less-visited geologic gems. Not far away lies Flathead Lake, the largest natural freshwater lake in the West.<br><br> Riding mostly on U.S. Forest Service roads and a bit of singletrack, we’ll experience the high country of one of the world’s great wildland complexes. Along the way, we’ll encounter a variety of flora and fauna — the sharp-eyed might even spot wild huckleberries ripe for the picking or the occasional bear on a distant hillside. We’ll skirt the southern boundaries of the Bob Marshall and Scapegoat wilderness areas and crest the Continental Divide on a loop near Lincoln, our ultimate destination.</p>
 
 
             <h2 class="registration">Cycle The Continetal Divide Registation</h2>
 
-                <form action="https://koenig6.github.io/theMountainSpoke/thanks.html" >
+            <form class="eventForm" action="https://koenig6.github.io/theMountainSpoke/thanks.html" >
 
+                <fieldset class="contact">
 
-                        <label class="contact"><span>Full Name :</span></label><input type="text" name="firstname" required placeholder="Your name" autocomplete="on"><br>
+                    <div class="contain">
 
-                        <label class="contact"><span>Phone Number :</span></label><input type="tel" name="phone" required placeholder="Your phone number" autocomplete="on"><br>
+                        <label class="contact"></label><input type="text" name="firstname" required placeholder="Your name" autocomplete="on"><br>
 
-                        <label class="contact"><span>Date of Birth :</span> </label><input type="date" name="birthday"><br>
+                        <label class="contact"></label><input type="tel" name="phone" required placeholder="Your phone number" autocomplete="on"><br>
 
-                        <label class="contact"><span>Email (optional) :</span></label><input type="text" name="email"   placeholder="Your email" autocomplete="on"><br>
+                        <label class="contact"></label><input type="date" name="birthday"><br>
 
-                        <label class="contact"><span>Zip Code :   </span></label><input type="number" name="zip" required autocomplete="on"><br>
+                        <label class="contact"></label><input type="text" name="email"   placeholder="Your email" autocomplete="on"><br>
 
-                        <label class="contact"><span>State (no abbreviations): </span></label><input type="text" name="state" required autocomplete="on"><br>
+                        <label class="contact"></label><input type="number" name="zip" placeholder="Your zip code" required autocomplete="on"><br>
 
-                        <label class="contact"><span>Country:</span></label><select name="selectCountry"><br>
-                            <option value="select region" disabled>-- select an option --</option>
+                        <label class="contact"></label><input type="text" name="state" placeholder="Your state" required autocomplete="on"><br>
+
+                    </div>
+
+                        <label class="contact"></label><select name="selectCountry"><br>
+                            <option value="select region" disabled>-- Select your country --</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -115,8 +117,9 @@
                     <textarea class="contact" name="message" rows="10" cols="40" placeholder="Please enter comments or special accommodations here..." ></textarea>
 
                         <input type="submit" class="submit">
+                    </fieldset>
 
-                </form>
+            </form>
 
         </main>
 

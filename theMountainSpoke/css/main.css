@@ -17,7 +17,6 @@
         text-align: center;
         display: block;
         text-decoration:none;
-
     }
     .navigation.responsive li a:hover {
         background-color: #007849;
@@ -33,6 +32,7 @@
         color: #262228;
         font-family: 'Playfair Display', serif;
         margin: 0 auto; /*centers*/
+        text-align: center;
 }
     header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -40,13 +40,11 @@
         margin: auto;
 }
     header {
-        text-align: center;
         font-size: 1em;
     }
     nav button {
         display: block;
         margin: 3px;
-
 }
     nav ul {
     display: block;
@@ -67,25 +65,42 @@
         background-color: #0375B4; /*makes current page link blue*/
         color: #FFFFFF;
 }
-    #slider {/*for sales page*/
+    li.slide > p{/*sales page*/
+    width: 85%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+    #slider { /*for sales page*/
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
         overflow: hidden;
         width: 720px;
-        height: 400px;
+height: 500px;  /*this pushes footer down so all text can be seen*/
     }
-    #slider .slides {/*for sales page*/
+    #slider .slides { /*for sales page*/
         display: block;
         width: 6000px;
         height: 400px;
         margin: 0;
-        padding: 0;
-
+        padding-top: 0;
     }
-    #slider .slide {/*for sales page*/
+    #slider .slide { /*for sales page*/
         float: left;
         list-style-type: none;
-        width: 720px;
+        width: 920px;
         height: 400px;
     }
+    .thanks{/*thank you page*/
+    margin: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .hours{/*contact us*/
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+}
     main figure {
         margin: 0 0 .2rem 2%;
         width:96%;
@@ -93,12 +108,12 @@
     main figure img {
         width: 100%;
 }
-article.itnerary{
+    article.itnerary{
     width: 95%;
     text-align: center;
     padding: 10px;
 }
-table{/*for service*/
+    table{/*for service*/
         margin: 0 auto;
         margin-top: 13%;
         margin-left: auto;
@@ -107,33 +122,34 @@ table{/*for service*/
         border-collapse: collapse;
         box-shadow: 5px 5px 10px #628ca6;
     }
-thead{/*for service*/
+    thead{/*for service*/
         font-size: 1.75em;
     }
-th, td{/*for service*/
+    th, td{/*for service*/
         border: 1px solid black;
         padding: 7px;
     }
-tr{/*for service*/
+    tr{/*for service*/
         border: 1px solid black;
     }
-input[name="firstname"]{/*contact and event*/
+    input[name="firstname"]{/*contact and event*/
         background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_user.png")
     }
-input[name="phone"]{/*contact and event*/
+    input[name="phone"]{/*contact and event*/
         background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_phone.png")
     }
-input[name="email"]{/*contact and event*/
+    input[name="email"]{/*contact and event*/
         background-image: url("https://survicate.com/wp-content/themes/survicate_theme/dist/img/contact_input_email.png")
     }
-input,select, textarea,fieldset{/*contact*/
+    input,select, textarea,fieldset{/*contact*/
         border-radius: 5px;
     }
-iframe{/*contact and event*/
+    iframe{/*contact and event*/
         display: block;
         margin: 0 auto;
+
     }
-input{ /*contact and event*/
+    input{ /*contact and event*/
         height: 60px;
         width: 300px;
         padding: 24px 50px;
@@ -142,37 +158,39 @@ input{ /*contact and event*/
         background-repeat: no-repeat;/*contact and event img*/
         background-position: 15px 22px;/*contact and event img*/
     }
-.contact{/*contact us and event*/
-        border: 1px solid #dfe2e2;
+    .contact{/*contact us and event*/
         margin-bottom: 30px;
-        text-align: center;
+        text-align: center; /*this centers the words in the textarea*/
     }
-input.submit{/*contact and event*/
+    input.submit{/*contact and event*/
         background-color: #FFCE00;
         box-shadow: 5px 5px 10px lightsteelBlue;
-
+        color: #262228;
     }
-textarea{
-        border-style: inset;
-        border-width: 2px;
+    textarea{/*contact us and event*/
         margin-top: 10px;
     }
-.grid{/*for adventure tours*/
+    .event{/*events*/
+    list-style-type: none;
+}
+    select{/*events*/
+    padding: 15px;
+}
+    .grid{/*for adventure tours*/
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
         grid-gap: 5px;
         grid-auto-rows: minmax(100px, auto);
         border-radius: 5px;
         text-align: center;
     }
-.grid img{/*for adventure tours*/
+    .grid img{/*for adventure tours*/
         margin: 15px 15px 15px 15px;
 }
-.grid > figure{/*for adventure tours*/
+    .grid > figure{/*for adventure tours*/
         border: 1px solid black;
         border-radius: 5px;/*rounds ccorners*/
     }
-table{/*adventure tours and service*/
+    table{/*adventure tours and service*/
         margin: 15px auto;
         text-align: center;
         border-collapse: collapse;
@@ -180,9 +198,9 @@ table{/*adventure tours and service*/
     footer {
         background-color: #007849;
         color: #FFFFFF;
-        text-align: center;
         width: 85%;
         padding: 1%;
+        margin-top: 10px;
     }
     a {
         text-decoration: none;

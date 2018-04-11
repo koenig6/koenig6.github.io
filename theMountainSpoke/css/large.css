@@ -1,12 +1,41 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-    article p.town-article img {
-        width: 29.333%;
+    nav{
+        width: 1400px;
     }
-    .grid{
+    nav ul li a {
+        width: 233px;  /* makes link boxes larger to that they are centered*/
+    }
+    .grid{/*adventure tours*/
         width: 100%;
         justify-content: center;
-        grid-template-columns:minmax(auto, 30%)minmax(auto, 30%)minmax(auto, 30%);
+        grid-template-columns:minmax(auto, 45%)minmax(auto, 45%);
     }
+    .contain{/*events*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input{/*events and contact us*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    textarea{/*events and contact us*/
+        display: block;
+        margin: auto;
+        width: auto;
+    }
+    select{/*events*/
+        margin-bottom: 20px;
+    }
+    .usThree{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .usThree>input{
+        width: 33%;
+    }
+
 }

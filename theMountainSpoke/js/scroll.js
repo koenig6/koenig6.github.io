@@ -2,7 +2,7 @@ $(function(){
 
     //configuration
     var width = 720;
-    var animationSpeed = 4000;
+    var animationSpeed = 5000;
     var pause = 3000;
     var currentSlide = 1;
 

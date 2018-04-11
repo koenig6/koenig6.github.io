@@ -6,6 +6,13 @@
         width: 100%;
         flex-flow: row wrap;
     }
+    h1{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .subheading{
+        margin-bottom: 10px;
+    }
     nav button { /* hamburger button does not need to be shown */
         display:none;
     }
@@ -30,9 +37,8 @@
     nav ul li a {
         display: block;/*makes whole link a box to click not just the word*/
         padding: 10px 10px;
-        width: 145px;  /* makes link boxes larger to that they are centered*/
-
-
+        width: 128px;  /* makes link boxes larger to that they are centered*/
+        font-size: 85%;
     }
     nav ul li a:hover {
         background-color: #007849; /*when mouse is on nav link it will be this color*/
@@ -42,27 +48,42 @@
         background-color: #0375B4; /*makes current page link blue*/
         color: #FFFFFF;
     }
-    article.itnerary{/*interary*/
-        width: 850px; /*centers text*/
-
-    }
     #serviceSummary{/*Just for service*/
         display: flex;
         flex-wrap: wrap;
     }
     section>table{/*JUST for service*/
-       /* float: left;
-        clear: right;
-        margin:  3%;
-        text-align: center;*/
         border-collapse: collapse;
         box-shadow: 5px 5px 10px #628ca6;
+    }
+   .home{/*home page*/
+        margin-top: 10px;
+    }
+    .event{/*for events page*/
+        font-size: 20px;
+    }
+    .divide{/*for events page*/
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    select{/*for events page*/
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    form{/*events and contact*/
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid{/*JUST for adventure tours*/
+        grid-template-columns: 1fr 1fr;
     }
     figure>img{/*JUST for adventure tours*/
         width: 73%;
         height: auto;
     }
-    figure>table{
+    figure>table{/*JUST for adventure tours*/
         width: 95%;
         height: auto;
     }
@@ -75,16 +96,6 @@
     }
     tr{/*for service and adventure tours*/
         border: 1px solid black;
-    }
-    form{
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    input.submit{
-        color: #262228;
-        background-color: #FFCE00;
-        box-shadow: 5px 5px 10px lightsteelBlue;
     }
     #slider {/*for sales page*/
         overflow: hidden;
@@ -116,9 +127,6 @@
         list-style-type: none;
         width: 720px;
         height: 400px;
-    }
-    .grid{
-        grid-template-columns: 1fr 1fr;
     }
     footer {
         clear: both; /*for tables in service*/
