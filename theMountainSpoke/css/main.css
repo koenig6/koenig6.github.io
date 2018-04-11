@@ -201,10 +201,6 @@ height: 500px;  /*this pushes footer down so all text can be seen*/
         padding: 1%;
         margin-top: 10px;
     }
-    a {
-        text-decoration: none;
-
-}
 
     /* Other Class Selectors */
 
