@@ -1,10 +1,12 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     header{
+        font-size: 1.5em;
         display: flex;
         justify-content: center;
         width: 100%;
         flex-flow: row wrap;
+        max-width: 827px;
     }
     h1{
         margin-top: auto;
